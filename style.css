@@ -21,16 +21,12 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
-
 .navWrap {
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-
-
 .nav ul {
   display: flex;
   align-items: center;
@@ -76,7 +72,18 @@ body {
 .nav ul .button a:hover {
   background-color: #ee3459b8;
 }
-
+.button li {
+  justify-content: center;
+  background-color: #ffff00bd;
+  display: flex;
+  width: 100%;
+}
+.button li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-family: sans-serif;
+}
 .HeadContent img {
   width: 350px;
 }
@@ -125,12 +132,11 @@ body {
   }
 
   .nav ul .ancor a {
-    font-size: 12px;
+    font-size: 8px;
   }
 
   .nav ul .button a {
-    font-size: 12px;
-    padding: 4px;
+    font-size: 5px;
   }
 
   .HeadContent {
@@ -139,29 +145,8 @@ body {
     grid-template-columns: repeat(1, 3fr);
     text-align: center;
   }
-
-  .button {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .button li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 6px 6px;
-    background-color: #ffff00bd;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-  }
-
-  .button li a {
-    font-size: 9px;
-    color: #fff;
-    text-decoration: none;
+  .button li a{
+    font-size: 14px;
   }
 }
 
@@ -192,30 +177,6 @@ body {
     gap: 10px;
     text-align: center;
     padding: 50px;
-  }
-
-  .button {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .button li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 6px 117px;
-    background-color: #ffff00bd;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-  }
-
-  .button li a {
-    font-size: 9px;
-    color: #fff;
-    text-decoration: none;
   }
 
 }
@@ -258,29 +219,6 @@ body {
     padding: 50px;
   }
 
-  .button {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .button li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 6px 201px;
-    background-color: #ffff00bd;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-  }
-
-  .button li a {
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -304,27 +242,4 @@ body {
     gap: 10px;
   }
 
-  .button {
-    display: flex;
-    justify-content: center;
-
-  }
-
-  .button li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 5px 313px;
-    background-color: #ffff00bd;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-  }
-
-  .button li a {
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-  }
 }
