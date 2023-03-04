@@ -100,9 +100,23 @@ body {
   height: 200px;
 }
 
+.capsules h1{
+  font-family: emoji;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+  font-weight: bolder;
+}
+.capsules  p{
+  font-size: 13px;
+  text-align: center;
+  margin-top: -16px;
+  color: white;
+}
 .capsuleProducts span {
+  grid-column-gap: 3px;
   display: flex;
-  margin: -35px;
   justify-content: start;
   align-items: center;
 }
@@ -114,17 +128,26 @@ body {
 }
 
 .capsuleProducts span p {
-  line-height: 23px;
+  font-family: -webkit-body;
+  font-size: 16px;
+  line-height: 0px;
   color: white;
 }
 
 .navLogo img {
   width: 75px;
 }
-.capsule{
+/* .capsule{
   background-color: black;
-}
+} */
 /* Extra small devices (phones, 576px and down) */
+.capsuleProducts {
+  gap: 100px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+
 @media only screen and (max-width: 576px) {
   .navLogo img {
     width: 45px;
@@ -150,8 +173,20 @@ body {
     text-align: center;
   }
   .button li a{
-    font-size: 14px;
+    font-size: 9px;
+    margin-top: 5px;
   }
+  .capsuleProducts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .capsuleBG {
+    background-color: #003c3f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;
+}
+.capsuleProducts span p {
+  font-size: 12px;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -182,6 +217,15 @@ body {
     gap: 10px;
     text-align: center;
   }
+  .capsuleBG {
+    background-color: #003c3f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;
+}
+.capsuleProducts {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 30px;
+}
 
 }
 
@@ -204,13 +248,8 @@ body {
   }
 
   .capsuleProducts {
-    gap: 100px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 30px;
-
-
   }
 
   .HeadContent {
@@ -222,6 +261,10 @@ body {
     gap: 0px;
     text-align: center;
   }
+  .capsuleBG{
+    background-color: #003c3f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;}
 
 }
 
@@ -232,9 +275,6 @@ body {
   }
 
   .capsuleProducts {
-    gap: 100px;
-    text-align: center;
-    display: grid;
     grid-template-columns: repeat(3, 3fr);
   }
 
@@ -246,5 +286,9 @@ body {
     grid-template-columns: repeat(3, 3fr);
     gap: 0px;
   }
+  .capsuleBG{
+    background-color: #003c3f;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #000000;}
 
 }
