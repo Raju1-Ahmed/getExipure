@@ -8,9 +8,8 @@ body {
 }
 
 .Header {
-  background: rgb(2,0,36);
-  background: radial-gradient(circle, #020707e0 9%, rgb(0 0 0) 28%, rgb(40 57 59) 79%, rgb(0 0 0) 88%, rgb(0 0 0) 98%);
-}
+background-color: #003c3f;
+ }
 .NavBar {
   background-color: #00464a;
 }
@@ -153,7 +152,11 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
 }
+.capsule{
+  background: rgb(2,0,36);
+  background:linear-gradient(112.1deg, rgb(17 21 31 / 61%) 11.4%, rgb(0 0 0 / 90%) 70.2%)
 
+}
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
   .navLogo img {
