@@ -9,7 +9,7 @@ body {
 
 .Header {
   position: relative;
-  background-image: radial-gradient(circle, #008683, #007a7a, #006f70, #006366, #00585c)
+  background-image: radial-gradient(circle, #008683, #007a7a, #ee3459ba, #006366, #00464a)
 }
 
 .NavBar {
@@ -19,14 +19,15 @@ body {
 .container {
   max-width: 992px;
   margin: 0 auto;
-  padding: 0 20px;
 }
+
 .navWrap {
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav ul {
   display: flex;
   align-items: center;
@@ -72,27 +73,33 @@ body {
 .nav ul .button a:hover {
   background-color: #ee3459b8;
 }
+
 .button li {
   justify-content: center;
   background-color: #ffff00bd;
   display: flex;
   width: 100%;
 }
-.button li a{
+
+.button li a {
   text-decoration: none;
   color: #fff;
   font-weight: 900;
   font-family: sans-serif;
 }
+
 .HeadContent img {
   width: 350px;
 }
 
 .capsule h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  color: white;
   text-align: center;
-  margin-top: 30px;
+}
+
+.capsule p {
+  text-align: center;
+  color: white;
 }
 
 .capsuleProducts img {
@@ -100,7 +107,7 @@ body {
   height: 200px;
 }
 
-.capsules h1{
+.capsules h1 {
   font-family: emoji;
   font-size: 20px;
   text-align: center;
@@ -108,12 +115,14 @@ body {
   color: white;
   font-weight: bolder;
 }
-.capsules  p{
+
+.capsules p {
   font-size: 13px;
   text-align: center;
   margin-top: -16px;
   color: white;
 }
+
 .capsuleProducts span {
   grid-column-gap: 3px;
   display: flex;
@@ -137,6 +146,7 @@ body {
 .navLogo img {
   width: 75px;
 }
+
 /* .capsule{
   background-color: black;
 } */
@@ -150,7 +160,7 @@ body {
 
 @media only screen and (max-width: 576px) {
   .navLogo img {
-    width: 45px;
+    width: 30px;
   }
 
   .HeadContent img {
@@ -158,35 +168,46 @@ body {
   }
 
   .nav ul .ancor a {
-    font-size: 8px;
+    font-size: 5px;
   }
 
+  .navWrap {
+    justify-content: space-around;
+  }
   .nav ul .button a {
-    font-size: 5px;
+    background: none;
+    padding: 0px;
+    font-size: 7px;
   }
 
   .HeadContent {
     background: #003c3f;
     margin-top: 0px;
-    padding: 52px 20px;    display: grid;
+    padding: 52px 20px;
+    display: grid;
     grid-template-columns: repeat(1, 3fr);
     text-align: center;
   }
-  .button li a{
+
+  .button li a {
     font-size: 9px;
     margin-top: 5px;
   }
+
   .capsuleProducts {
     grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
   }
+
   .capsuleBG {
     background-color: #003c3f;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
-}
-.capsuleProducts span p {
-  font-size: 12px;
-}
+  }
+
+  .capsuleProducts span p {
+    font-size: 12px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -217,15 +238,17 @@ body {
     gap: 10px;
     text-align: center;
   }
+
   .capsuleBG {
     background-color: #003c3f;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
-}
-.capsuleProducts {
-  grid-template-columns: repeat(1, 1fr);
-  padding: 30px;
-}
+  }
+
+  .capsuleProducts {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+  }
 
 }
 
@@ -261,10 +284,12 @@ body {
     gap: 0px;
     text-align: center;
   }
-  .capsuleBG{
+
+  .capsuleBG {
     background-color: #003c3f;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px #000000;}
+    box-shadow: 5px 5px 15px #000000;
+  }
 
 }
 
@@ -286,9 +311,11 @@ body {
     grid-template-columns: repeat(3, 3fr);
     gap: 0px;
   }
-  .capsuleBG{
+
+  .capsuleBG {
     background-color: #003c3f;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px #000000;}
+    box-shadow: 5px 5px 15px #000000;
+  }
 
 }
