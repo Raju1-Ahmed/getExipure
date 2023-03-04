@@ -8,10 +8,9 @@ body {
 }
 
 .Header {
-  position: relative;
-  background-image: radial-gradient(circle, #008683, #007a7a, #ee3459ba, #006366, #00464a)
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, #020707e0 9%, rgb(0 0 0) 28%, rgb(40 57 59) 79%, rgb(0 0 0) 88%, rgb(0 0 0) 98%);
 }
-
 .NavBar {
   background-color: #00464a;
 }
@@ -75,10 +74,11 @@ body {
 }
 
 .button li {
-  justify-content: center;
   background-color: #ffff00bd;
-  display: flex;
-  width: 100%;
+  display: inline-flex;
+  text-align: center;
+  margin-left: 280px;
+  padding: 2px 175px;
 }
 
 .button li a {
@@ -147,10 +147,6 @@ body {
   width: 75px;
 }
 
-/* .capsule{
-  background-color: black;
-} */
-/* Extra small devices (phones, 576px and down) */
 .capsuleProducts {
   gap: 100px;
   text-align: center;
@@ -158,6 +154,7 @@ body {
   grid-template-columns: repeat(3, 3fr);
 }
 
+/* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
   .navLogo img {
     width: 30px;
@@ -208,6 +205,13 @@ body {
   .capsuleProducts span p {
     font-size: 12px;
   }
+  .button li {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -248,6 +252,13 @@ body {
   .capsuleProducts {
     grid-template-columns: repeat(1, 1fr);
     padding: 30px;
+  }
+  .button li {
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
   }
 
 }
@@ -317,5 +328,11 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
   }
-
+  .button li {
+  display: inline-flex;
+  width: 50%;
+  margin-left: 300px;
+  padding: 0px;
+  justify-content: center;
+  }
 }
