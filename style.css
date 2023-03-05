@@ -8,8 +8,21 @@ body {
 }
 
 .Header {
-background-color: #003c3f;
- }
+  background-color: #003c3f;
+}
+
+.HeaderPH h2{
+  text-align: center;
+  font-weight: 900;
+  color: #ddd;
+  font-size: 24px;
+}
+.HeaderPH p{
+  font-weight: 500;
+   color: #ddd;
+   font-size: 22px;
+   text-align: start;
+}
 .NavBar {
   background-color: #00464a;
 }
@@ -27,6 +40,7 @@ background-color: #003c3f;
 }
 
 .nav ul {
+  gap: 15px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -82,10 +96,23 @@ background-color: #003c3f;
 
 .button li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: 900;
   font-family: sans-serif;
 }
+
+.buttonContent {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.buttonContent p{
+  font-weight: 900;
+  text-align: start;
+  color: azure;
+  padding: 8px;
+  font-size: 18px;
+}
+
 
 .HeadContent img {
   width: 350px;
@@ -111,7 +138,7 @@ background-color: #003c3f;
   font-size: 20px;
   text-align: center;
   margin-top: 0px;
-  color: white;
+  color: #fa0000;
   font-weight: bolder;
 }
 
@@ -123,7 +150,7 @@ background-color: #003c3f;
 }
 
 .capsuleProducts span {
-  grid-column-gap: 3px;
+  grid-column-gap: 0px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -152,38 +179,58 @@ background-color: #003c3f;
   display: grid;
   grid-template-columns: repeat(3, 3fr);
 }
-.capsule{
-  background: rgb(2,0,36);
-  background:linear-gradient(112.1deg, rgb(17 21 31 / 61%) 11.4%, rgb(0 0 0 / 90%) 70.2%)
 
+.capsule {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(112.1deg, rgb(17 21 31 / 61%) 11.4%, rgb(0 0 0 / 90%) 70.2%)
 }
+
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
   .navLogo img {
-    width: 30px;
+    width: 50px;
   }
-
   .HeadContent img {
     width: 200px;
   }
-
+  .HeaderPH p{  
+    text-align: center;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
   .nav ul .ancor a {
-    font-size: 5px;
+    font-size: 15px;
+    font-family: cursive;
   }
 
   .navWrap {
     justify-content: space-around;
   }
+
   .nav ul .button a {
     background: none;
     padding: 0px;
-    font-size: 7px;
+    font-size: 20px;
+    font-family: cursive;
   }
 
+  .nav ul .button {
+    padding: 0px;
+  }
+  .buttonContent {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .buttonContent p {
+    font-size: 17px;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
   .HeadContent {
     background: #003c3f;
     margin-top: 0px;
-    padding: 52px 20px;
+    padding: 0px;
     display: grid;
     grid-template-columns: repeat(1, 3fr);
     text-align: center;
@@ -200,14 +247,17 @@ background-color: #003c3f;
   }
 
   .capsuleBG {
+    padding: 10px 2px;
+    border: 2px solid red;
     background-color: #003c3f;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
   }
 
   .capsuleProducts span p {
-    font-size: 12px;
+    font-size: 15px;
   }
+
   .button li {
     display: flex;
     width: 100%;
@@ -219,17 +269,23 @@ background-color: #003c3f;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
+  .navWrap {
+    justify-content: space-around;
+  }
 
   .navLogo img {
     width: 70px;
   }
 
   .nav ul .ancor a {
-    font-size: 8px;
+    font-size: 20px;
+    font-family: cursive;
   }
 
   .nav ul .button a {
-    font-size: 8px;
+    font-size: 20px;
+    font-family: cursive;
+
   }
 
   .HeadContent img {
@@ -249,6 +305,8 @@ background-color: #003c3f;
   .capsuleBG {
     background-color: #003c3f;
     border-radius: 10px;
+    padding: 10px 2px;
+    border: 2px solid red;
     box-shadow: 5px 5px 15px #000000;
   }
 
@@ -256,6 +314,7 @@ background-color: #003c3f;
     grid-template-columns: repeat(1, 1fr);
     padding: 30px;
   }
+
   .button li {
     display: flex;
     width: 100%;
@@ -264,6 +323,9 @@ background-color: #003c3f;
     justify-content: center;
   }
 
+  .button li img {
+    margin-left: 10px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -277,11 +339,11 @@ background-color: #003c3f;
   }
 
   .nav ul .ancor a {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .nav ul .button a {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .capsuleProducts {
@@ -303,6 +365,10 @@ background-color: #003c3f;
     background-color: #003c3f;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
+  }
+
+  .button li img {
+    margin-left: 10px;
   }
 
 }
@@ -328,14 +394,33 @@ background-color: #003c3f;
 
   .capsuleBG {
     background-color: #003c3f;
+    padding: 10px 2px; 
+    border: 2px solid red;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
+   
   }
+
   .button li {
-  display: inline-flex;
-  width: 50%;
-  margin-left: 300px;
-  padding: 0px;
-  justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0px;
+  }
+
+  .nav ul .ancor a {
+    font-size: 28px;
+  }
+
+  .nav ul .button a {
+    font-size: 25px;
+  }
+
+  .navWrap {
+    padding: 7px;
+    justify-content: space-between;
+  }
+
+  .button li img {
+    margin-left: 10px;
   }
 }
