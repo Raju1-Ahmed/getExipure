@@ -19,9 +19,12 @@ body {
 }
 
 .HeaderPH p {
-  font-weight: 500;
+  font-weight: 100;
   color: #ddd;
+  font-family: initial;
   font-size: 22px;
+  line-break: unset;
+  line-height: 28px;
   text-align: start;
 }
 
@@ -237,6 +240,7 @@ body {
 
   .buttonContent p {
     font-size: 17px;
+    text-align: center;
     font-weight: 100;
     font-family: sans-serif;
   }
@@ -262,7 +266,6 @@ body {
 
   .capsuleBG {
     padding: 10px 2px;
-    border: 2px solid red;
     background-color: #003c3f;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
@@ -320,7 +323,6 @@ body {
     background-color: #003c3f;
     border-radius: 10px;
     padding: 10px 2px;
-    border: 2px solid red;
     box-shadow: 5px 5px 15px #000000;
   }
 
@@ -400,7 +402,7 @@ body {
   .HeadContent {
     background: #003c3f;
     margin-top: 0px;
-    padding: 200px 0px 20px 0px;    
+    padding: 200px 10px 50px 10px;    
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     gap: 0px;
@@ -409,7 +411,6 @@ body {
   .capsuleBG {
     background-color: #003c3f;
     padding: 10px 2px;
-    border: 2px solid red;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #000000;
 
