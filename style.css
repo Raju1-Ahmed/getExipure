@@ -251,7 +251,7 @@ body {
   .HeadContent {
     background: #003c3f;
     margin-top: 0px;
-    padding: 125px 0px 20px 3px;
+    padding: 68px 0px 0px 0px;
     display: grid;
     grid-template-columns: repeat(1, 3fr);
     text-align: center;
