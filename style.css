@@ -11,6 +11,9 @@ body {
   background-color: #003c3f;
 }
 
+.rightPH{
+  /* margin-top: -10px; */
+}
 .HeaderPH h2 {
   text-align: center;
   font-weight: 900;
@@ -279,7 +282,7 @@ body {
     display: flex;
     width: 100%;
     margin: 0px;
-    padding: 0px;
+    padding: 5px 0px 5px 0px;
     justify-content: center;
   }
 }
@@ -400,6 +403,8 @@ body {
   }
 
   .HeadContent {
+        max-width: 1200px;
+    margin: 0 auto;
     background: #003c3f;
     margin-top: 0px;
     padding: 200px 10px 50px 10px;    
